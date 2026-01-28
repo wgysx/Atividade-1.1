@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suco Sabor Refrigerante - O Refrigerante que é Suco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">SS</div>
+                    <div class="logo-text">
+                        <span class="logo-main">SUCO</span>
+                        <span class="logo-accent">SABOR</span>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Início</a></li>
+                        <li><a href="#products" class="nav-link"><i class="fas fa-wine-bottle"></i> Produtos</a></li>
+                        <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                        <li><a href="#video" class="nav-link"><i class="fas fa-play-circle"></i> Vídeo</a></li>
+                        <li><a href="#testimonials" class="nav-link"><i class="fas fa-comments"></i> Depoimentos</a></li>
+                        <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+                        <li><a href="#payment" class="nav-link"><i class="fas fa-shopping-cart"></i> Pagamento</a></li>
+                        <li><button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-on-scroll">
+                    <h1 class="hero-title">O Refrigerante que é <span class="text-highlight">Suco</span></h1>
+                    <p class="hero-subtitle">Uma experiência única de sabor que une a refrescância do refrigerante com os nutrientes do suco natural.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sem conservantes</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-percentage"></i>
+                            <span>30% menos açúcar</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <span>100% natural</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#products" class="cta-button primary">
+                            <i class="fas fa-shopping-cart"></i> CONHECER SABORES
+                        </a>
+                        <a href="#video" class="cta-button secondary">
+                            <i class="fas fa-play"></i> ASSISTIR VÍDEO
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image animate-on-scroll">
+                    <div class="bottle-container">
+                        <div class="bottle">
+                            <div class="bottle-neck"></div>
+                            <div class="bottle-body">
+                                <div class="bottle-label">
+                                    <span class="label-text">SUCO</span>
+                                    <span class="label-text-accent">SABOR</span>
+                                </div>
+                                <div class="liquid"></div>
+                            </div>
+                        </div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span class="text-highlight">Sabores</span></h2>
+                <p class="section-subtitle">Descubra a variedade de sabores que temos para oferecer. Cada um com uma experiência única de refrescância.</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge">Mais Vendido</div>
+                    <div class="product-image">
+                        <div class="flavor-icon">
+                            <i class="fas fa-lemon"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Laranja Citrus</h3>
+                        <p class="product-description">O clássico sabor de laranja com um toque cítrico refrescante. Feito com suco de laranja 100% natural.</p>
+                        <div class="product-details">
+                            <div class="detail">
+                                <i class="fas fa-leaf"></i>
+                                <span>Natural</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-temperature-low"></i>
+                                <span>Refrescante</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-battery-full"></i>
+                                <span>Energético</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 5,99</span>
+                            <span class="price-note">/ unidade</span>
+                        </div>
+                        <button class="product-button buy-btn" data-product="Laranja Citrus">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <div class="flavor-icon">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Uva Roxa</h3>
+                        <p class="product-description">Sabor intenso de uva roxa com gás natural. Rico em antioxidantes e sem adição de corantes artificiais.</p>
+                        <div class="product-details">
+                            <div class="detail">
+                                <i class="fas fa-heart"></i>
+                                <span>Antioxidante</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-wine-glass-alt"></i>
+                                <span>Intenso</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-spa"></i>
+                                <span>Relaxante</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 5,99</span>
+                            <span class="price-note">/ unidade</span>
+                        </div>
+                        <button class="product-button buy-btn" data-product="Uva Roxa">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge">Novidade</div>
+                    <div class="product-image">
+                        <div class="flavor-icon">
+                            <i class="fas fa-lemon"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Limão Siciliano</h3>
+                        <p class="product-description">Refrescante sabor de limão siciliano com um toque de menta. Perfeito para os dias mais quentes.</p>
+                        <div class="product-details">
+                            <div class="detail">
+                                <i class="fas fa-snowflake"></i>
+                                <span>Refrescante</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-mountain"></i>
+                                <span>Premium</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-wind"></i>
+                                <span>Revigorante</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 5,99</span>
+                            <span class="price-note">/ unidade</span>
+                        </div>
+                        <button class="product-button buy-btn" data-product="Limão Siciliano">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <div class="flavor-icon">
+                            <i class="fas fa-strawberry"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Morango Silvestre</h3>
+                        <p class="product-description">Doce sabor de morango com um toque ácido. Feito com morangos selecionados e suco natural.</p>
+                        <div class="product-details">
+                            <div class="detail">
+                                <i class="fas fa-heart"></i>
+                                <span>Doce Natural</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-forest"></i>
+                                <span>Silvestre</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-smile"></i>
+                                <span>Delicioso</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 5,99</span>
+                            <span class="price-note">/ unidade</span>
+                        </div>
+                        <button class="product-button buy-btn" data-product="Morango Silvestre">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-footer">
+                <div class="shipping-info">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Frete grátis para compras acima de R$ 50,00</span>
+                </div>
+                <div class="payment-info">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Parcelamento em até 12x sem juros</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa <span class="text-highlight">História</span></h2>
+                <p class="section-subtitle">Assista ao vídeo e descubra como criamos o Suco Sabor Refrigerante, unindo o melhor dos dois mundos.</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="video-container animate-on-scroll">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-overlay">
+                            <h3>O Sabor que Refresca</h3>
+                            <p>Conheça nossa jornada para criar o refrigerante mais saudável do mercado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <div class="video-stats">
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span class="stat-number">1.2M</span>
+                            <span class="stat-label">Visualizações</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span class="stat-number">45K</span>
+                            <span class="stat-label">Curtidas</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-share"></i>
+                            <span class="stat-number">8.5K</span>
+                            <span class="stat-label">Compartilhamentos</span>
+                        </div>
+                    </div>
+                    <button class="video-button">
+                        <i class="fab fa-youtube"></i> Assistir no YouTube
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <div class="section-header">
+                        <h2 class="section-title">Por que somos <span class="text-highlight">diferentes</span>?</h2>
+                        <p class="section-subtitle">O Suco Sabor Refrigerante nasceu da vontade de oferecer uma bebida que une o que há de melhor.</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fórmula Exclusiva</h4>
+                                <p>Mantém as bolhas que todos amam, mas elimina conservantes artificiais.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Ingredientes Selecionados</h4>
+                                <p>Todos os nossos sabores são produzidos com frutas selecionadas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Qualidade Garantida</h4>
+                                <p>Rigoroso controle de qualidade para garantir a melhor experiência.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Natural</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">-30%</div>
+                            <div class="stat-label">Menos Açúcar</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Conservantes</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image animate-on-scroll">
+                    <div class="image-container">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-industry"></i>
+                                <h4>Fábrica Moderna</h4>
+                                <p>Tecnologia de ponta para garantir qualidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que dizem <span class="text-highlight">sobre nós</span></h2>
+                <p class="section-subtitle">Confira o depoimento de alguns dos nossos clientes e parceiros.</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="slider-container">
+                    <div class="testimonial active" id="testimonial1">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text" id="testimonialText">
+                                "Finalmente uma bebida que une o prazer do refrigerante com a saúde do suco! Minha família toda adorou, especialmente o sabor de Laranja Citrus."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MS</div>
+                                <div class="author-info">
+                                    <h4 id="testimonialAuthor">Maria Silva</h4>
+                                    <p id="testimonialRole">Consumidora</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="dot active" data-slide="0"></button>
+                            <button class="dot" data-slide="1"></button>
+                            <button class="dot" data-slide="2"></button>
+                            <button class="dot" data-slide="3"></button>
+                        </div>
+                        <button class="slider-btn next" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="testimonials-stats">
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.7/5 baseado em 2.543 avaliações</span>
+                    </div>
+                    <button class="review-button">
+                        <i class="fas fa-pen"></i> Deixar sua avaliação
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="section-header">
+                        <h2 class="section-title">Entre em <span class="text-highlight">Contato</span></h2>
+                        <p class="section-subtitle">Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Endereço</h4>
+                                <p>Rua das Frutas, 123 - São Paulo, SP<br>CEP: 01234-567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Telefone</h4>
+                                <p>(11) 3456-7890<br>WhatsApp: (11) 98765-4321</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>E-mail</h4>
+                                <p>contato@sucosabor.com.br<br>vendas@sucosabor.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container animate-on-scroll">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Nome Completo
+                            </label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> E-mail
+                                </label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Telefone
+                                </label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Assunto
+                            </label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre produtos</option>
+                                <option value="pedido">Informações sobre pedido</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="parceria">Proposta de parceria</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Mensagem
+                            </label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="newsletter" checked>
+                                <label for="newsletter">Desejo receber novidades e promoções</label>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i> ENVIAR MENSAGEM
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section" id="payment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Finalizar <span class="text-highlight">Compra</span></h2>
+                <p class="section-subtitle">Escolha a forma de pagamento e finalize seu pedido com segurança.</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="payment-content">
+                <div class="order-summary animate-on-scroll">
+                    <h3><i class="fas fa-receipt"></i> Resumo do Pedido</h3>
+                    <div class="summary-items" id="orderSummaryItems">
+                        <p class="empty-cart">Carrinho vazio</p>
+                    </div>
+                    <div class="summary-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">R$ 0,00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Frete</span>
+                            <span id="shipping">R$ 0,00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Desconto</span>
+                            <span id="discount">-R$ 0,00</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <span id="grandTotal">R$ 0,00</span>
+                        </div>
+                    </div>
+                    <div class="coupon-section">
+                        <input type="text" id="couponCode" placeholder="Código do cupom">
+                        <button id="applyCoupon">Aplicar</button>
+                    </div>
+                </div>
+                
+                <div class="payment-options animate-on-scroll">
+                    <h3><i class="fas fa-credit-card"></i> Forma de Pagamento</h3>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="credit">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Cartão de Crédito</span>
+                        </div>
+                        <div class="payment-method" data-method="pix">
+                            <i class="fas fa-qrcode"></i>
+                            <span>PIX</span>
+                        </div>
+                        <div class="payment-method" data-method="boleto">
+                            <i class="fas fa-barcode"></i>
+                            <span>Boleto</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário de cartão de crédito -->
+                    <div class="payment-form" id="creditForm">
+                        <div class="form-group">
+                            <label>Número do Cartão</label>
+                            <div class="card-input">
+                                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Validade</label>
+                                <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label>CVV</label>
+                                <input type="text" id="cardCvv" placeholder="000" maxlength="4">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Nome no Cartão</label>
+                            <input type="text" id="cardName" placeholder="Como está no cartão">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Parcelas</label>
+                            <select id="installments">
+                                <option value="1">1x de R$ 0,00 sem juros</option>
+                                <option value="2">2x de R$ 0,00 sem juros</option>
+                                <option value="3">3x de R$ 0,00 sem juros</option>
+                                <option value="4">4x de R$ 0,00 sem juros</option>
+                                <option value="5">5x de R$ 0,00 sem juros</option>
+                                <option value="6">6x de R$ 0,00 sem juros</option>
+                                <option value="10">10x de R$ 0,00 com juros</option>
+                                <option value="12">12x de R$ 0,00 com juros</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário PIX -->
+                    <div class="payment-form" id="pixForm" style="display: none;">
+                        <div class="pix-info">
+                            <i class="fas fa-qrcode"></i>
+                            <h4>Pague com PIX</h4>
+                            <p>Escaneie o QR Code abaixo ou copie o código para pagamento</p>
+                            <div class="pix-qr-code">
+                                <div class="qr-placeholder"></div>
+                            </div>
+                            <div class="pix-code">
+                                <input type="text" id="pixCode" value="00020126370014BR.GOV.BCB.PIX0114+5511999999999520400005303986540510.005802BR5925EMPRESA SUCCO SABOR6009SAO PAULO62070503***6304E2CA" readonly>
+                                <button onclick="copyPixCode()">
+                                    <i class="fas fa-copy"></i> Copiar
+                                </button>
+                            </div>
+                            <p class="pix-expiry">Válido por: <span id="pixExpiry">30:00</span></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário Boleto -->
+                    <div class="payment-form" id="boletoForm" style="display: none;">
+                        <div class="boleto-info">
+                            <i class="fas fa-barcode"></i>
+                            <h4>Boleto Bancário</h4>
+                            <p>O boleto será gerado após a confirmação do pedido e enviado para seu e-mail.</p>
+                            <p>Vencimento: 3 dias úteis</p>
+                            <div class="boleto-barcode">
+                                <div class="barcode-placeholder"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-payment" id="submitPayment">
+                        <i class="fas fa-lock"></i> Finalizar Pagamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">SS</div>
+                        <div class="logo-text">
+                            <span class="logo-main">SUCO</span>
+                            <span class="logo-accent">SABOR</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        O refrigerante que é suco. Uma experiência única de sabor que une refrescância e nutrientes em uma bebida inovadora.
+                    </p>
+                    <div class="footer-newsletter">
+                        <h4>Receba nossas ofertas</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Seu melhor e-mail">
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="#products">Laranja Citrus</a></li>
+                            <li><a href="#products">Uva Roxa</a></li>
+                            <li><a href="#products">Limão Siciliano</a></li>
+                            <li><a href="#products">Morango Silvestre</a></li>
+                            <li><a href="#products">Todos os Sabores</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Sobre Nós</a></li>
+                            <li><a href="#contact">Trabalhe Conosco</a></li>
+                            <li><a href="#contact">Seja um Revendedor</a></li>
+                            <li><a href="#contact">Política de Privacidade</a></li>
+                            <li><a href="#contact">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Ajuda</h4>
+                        <ul>
+                            <li><a href="#contact">Dúvidas Frequentes</a></li>
+                            <li><a href="#payment">Formas de Pagamento</a></li>
+                            <li><a href="#payment">Entrega e Frete</a></li>
+                            <li><a href="#contact">Trocas e Devoluções</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-barcode"></i>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2024 Suco Sabor Refrigerante. Todos os direitos reservados.</p>
+                    <p class="developed-by">
+                        Desenvolvido com <i class="fas fa-heart"></i> para os amantes de uma boa bebida
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-shopping-cart"></i> Seu Carrinho</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <a href="#products" class="cta-button primary">Ver Produtos</a>
+                </div>
+                <div class="cart-items" id="cartItems"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <span>
